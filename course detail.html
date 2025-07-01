@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - Web Development Fundamentals</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="LearnHub Logo">
+                <span>LearnHub</span>
+            </a>
+
+            <div class="container">
+    <a href="courses.html" class="back-link">
+        <i class="fas fa-arrow-left"></i> Back to Courses
+    </a>
+</div>
+            <nav class="nav">
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <img src="assets/icons/menu.svg" alt="Menu" class="menu-icon">
+        <img src="assets/icons/close.svg" alt="Close" class="close-icon" style="display: none;">
+    </button>
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="courses.html" class="nav-link">Courses</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+    </ul>
+ </nav>
+            <div class="user-actions">
+                <a href="#" class="btn btn-outline">Login</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="course-detail-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <a href="courses.html">Courses</a> / <span>Web Development Fundamentals</span>
+                </div>
+                <div class="course-header-content">
+                    <div class="course-header-text">
+                        <h1>Web Development Fundamentals</h1>
+                        <p class="course-subtitle">Learn HTML, CSS, and JavaScript to build modern websites from scratch.</p>
+                        <div class="course-meta">
+                            <span class="instructor"><i class="fas fa-user"></i> John Doe</span>
+                            <span class="duration"><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span class="level"><i class="fas fa-signal"></i> Beginner</span>
+                            <span class="students"><i class="fas fa-users"></i> 1,245 students</span>
+                        </div>
+                        <div class="progress-container">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 35%;"></div>
+                            </div>
+                            <span class="progress-text">35% Complete</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn btn-primary btn-large">Continue Learning</a>
+                            <button class="btn btn-outline"><i class="far fa-bookmark"></i> Save</button>
+                        </div>
+                    </div>
+                    <div class="course-header-image">
+                        <img src="assets/images/course1.jpg" alt="Web Development">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-content">
+            <div class="container">
+                <div class="course-content-grid">
+                    <div class="course-video">
+                        <!-- Enhanced Video Container -->
+<div class="video-container">
+    <!-- Replace the WHOLE video section with this -->
+<div class="course-player">
+  <div class="video-container">
+    <iframe id="course-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+  </div>
+  
+  <!-- Add the NEW progress tracker below video -->
+  <div class="progress-tracker">
+    <!-- ... progress tracker code from step 3 ... -->
+  </div>
+  
+  <!-- Add modules section below progress -->
+  <div class="course-modules">
+    <!-- ... modules code from step 3 ... -->
+  </div>
+</div>
+    <!-- Video player will be inserted here by JavaScript -->
+    <div class="video-placeholder">
+        <p>Select a video source to begin playback</p>
+    </div>
+    
+    <!-- Video source selector -->
+    <div class="video-source-selector">
+        <h4>Video Source</h4>
+        <div class="source-options">
+            <button class="source-btn active" data-source="youtube" data-video-id="dQw4w9WgXcQ">
+                <i class="fab fa-youtube"></i> YouTube
+            </button>
+            <button class="source-btn" data-source="vimeo" data-video-id="76979871">
+                <i class="fab fa-vimeo-v"></i> Vimeo
+            </button>
+            <button class="source-btn" data-source="selfhosted" data-video-src="assets/videos/sample.mp4">
+                <i class="fas fa-video"></i> Self-Hosted
+            </button>
+        </div>
+    </div>
+</div>
+                        <div class="video-details">
+                            <h2>Introduction to HTML</h2>
+                            <p>In this lesson, we'll cover the basics of HTML, including tags, elements, and document structure.</p>
+                            <div class="video-actions">
+                                <button class="btn btn-outline"><i class="far fa-thumbs-up"></i> Like</button>
+                                <button class="btn btn-outline"><i class="fas fa-share"></i> Share</button>
+                                <button class="btn btn-outline"><i class="fas fa-flag"></i> Report</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-sidebar">
+                        <div class="sidebar-section">
+                            <h3>Course Content</h3>
+                            <div class="modules">
+                                <div class="module">
+                                    <div class="module-header">
+                                        <h4>Module 1: HTML Basics</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="module-content">
+                                        <div class="lesson completed">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Introduction to HTML</span>
+                                            <span class="lesson-duration">15 min</span>
+                                        </div>
+                                        <div class="lesson current">
+                                            <i class="fas fa-play-circle"></i>
+                                            <span>HTML Document Structure</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Common HTML Elements</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Forms and Inputs</span>
+                                            <span class="lesson-duration">30 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="module">
+                                    <div class="module-header">
+                                        <h4>Module 2: CSS Fundamentals</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="module-content" style="display: none;">
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Introduction to CSS</span>
+                                            <span class="lesson-duration">15 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Selectors and Properties</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Box Model</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="module">
+                                    <div class="module-header">
+                                        <h4>Module 3: JavaScript Basics</h4>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </div>
+                                    <div class="module-content" style="display: none;">
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Introduction to JavaScript</span>
+                                            <span class="lesson-duration">15 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Variables and Data Types</span>
+                                            <span class="lesson-duration">20 min</span>
+                                        </div>
+                                        <div class="lesson">
+                                            <i class="far fa-circle"></i>
+                                            <span>Functions and Events</span>
+                                            <span class="lesson-duration">25 min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-section">
+                            <h3>Resources</h3>
+                            <ul class="resources-list">
+                                <li><a href="#"><i class="fas fa-file-pdf"></i> HTML Cheat Sheet</a></li>
+                                <li><a href="#"><i class="fas fa-file-code"></i> Starter Code Files</a></li>
+                                <li><a href="#"><i class="fas fa-link"></i> Useful Links</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-description">
+            <div class="container">
+                <h2>About This Course</h2>
+                <div class="description-content">
+                    <p>This comprehensive course is designed to take you from a complete beginner to a confident web developer. You'll learn the fundamental technologies that power the web: HTML for content structure, CSS for styling, and JavaScript for interactivity.</p>
+                    <p>By the end of this course, you'll be able to:</p>
+                    <ul>
+                        <li>Create well-structured HTML documents</li>
+                        <li>Style web pages with CSS using modern techniques</li>
+                        <li>Add interactivity to your websites with JavaScript</li>
+                        <li>Understand how to make your websites responsive</li>
+                        <li>Debug and troubleshoot common web development issues</li>
+                    </ul>
+                    <h3>Prerequisites</h3>
+                    <p>No prior programming experience is required. All you need is a computer with internet access and a text editor (we'll recommend some free options).</p>
+                    <h3>Who This Course Is For</h3>
+                    <p>This course is perfect for absolute beginners who want to start a career in web development, entrepreneurs who want to build their own websites, or anyone curious about how the web works.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="instructor-info">
+            <div class="container">
+                <h2>About the Instructor</h2>
+                <div class="instructor-card">
+                    <div class="instructor-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+                    </div>
+                    <div class="instructor-details">
+                        <h3>John Doe</h3>
+                        <p class="instructor-title">Senior Web Developer at TechCorp</p>
+                        <div class="instructor-stats">
+                            <div class="stat">
+                                <span class="stat-number">4.8</span>
+                                <span class="stat-label">Instructor Rating</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12,540</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">Courses</span>
+                            </div>
+                        </div>
+                        <p class="instructor-bio">John has been a professional web developer for over 10 years, working with startups and Fortune 500 companies alike. He specializes in front-end development and loves teaching beginners how to code in a simple, approachable way.</p>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LearnHub</h3>
+                    <p>Empowering individuals through accessible, high-quality education.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new courses and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LearnHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Add right before </body> -->
+<script>
+  // YouTube API for progress tracking
+  const tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  const firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // ... paste the rest of the YouTube API code ...
+</script>
+</body>
+</html>
